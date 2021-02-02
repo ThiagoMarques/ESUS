@@ -1,0 +1,102 @@
+﻿{
+    "Package": "CI1",
+    "Institution": {
+        "AroucaID": 4510421,
+        "Acronym": "NEAD_Fiocruz",
+        "Name": "Núcleo de Educação a Distância Fiocruz Brasília"
+    },
+    "Resource": {
+        "Name": "E-SUS AF",
+        "Language": "pt-BR",
+        "CreationDate": "2020-08-25",
+        "Review": 30,
+        "ReviewDate": "2020-11-16",
+        "CoverImage": "capa.png"
+    },
+    "SupportedDevices": [
+        "Tablet",
+        "Desktop",
+		"Smartphone"
+    ],
+    "Video": {
+        "Formats": [
+            "mp4"
+        ],
+        "Resolutions": [
+		    "720p"
+        ]
+    },
+    "Persistence": {
+        "InstitutionAcronym": "SE_UNASUS",
+        "Version": "0001",
+        "Name": "E-SUS_AF"
+    },
+    "Dictionary": [
+        {
+            "Variable": "STATUS",
+            "Description": "Variável padrão, indica o status do recurso.",
+            "Format": {
+                "status": "Valor nominal textual do status podendo ter os seguintes valores 'attended', 'attempted', 'completed', 'passed', 'failed'",
+                "percentage": "Valor inteiro entre 0 e 100",
+                "LTIvalue": "Valor ponto flutuante entre 0 e 1",
+                "atividades": [{
+                    "id":"id da atividade",
+                    "nota":"nota obtida na atividade, entre 0 e 1",
+                    "peso":"peso da atividade no total do recurso, entre 0 e 1, a soma dos (pesos * notas) de todas as atividades não pode ser superior a 1"                    
+                }]
+            }
+        },
+        {
+            "Variable": "VIDEO",
+            "Description": "Indica informações acerca dos vídeos reproduzidos no curso",
+            "Format": {
+                "resolution": "Valor textual,  deve estar entre os valores disponíveis no recurso, com base no arquivo de configuração se_unasus_pack.json, exemplo '360p'"
+            }
+        },
+        {
+            "Variable": "ATIVA_VIDEO",
+            "Description": "Indica a ativação de um vídeo do roteiro",
+            "Format": {
+                "video": "Valor textual, indicando o id do vídeo ativado"
+            }
+        },		
+        {
+            "Variable": "NAVIGATION",
+            "Description": "Indica informações acerca da navegação do usuários dentro das páginas durante o curso",
+            "Format": {
+                "previous": "Valor textual que indica a url de origem do usuário antes da página atual",
+                "current": "Valor textual que indica a url  do usuário na página atual"
+            }
+        },
+        {
+            "Variable": "DOWNLOAD",
+            "Description": "Indica informações acerca do acesso a recursos em arquivo para download",
+            "Format": {
+                "current": "Valor textual que indica o marcador de navegação do usuário no momento do download",
+                "filetype": "Indica o tipo de arquivo, os valores possíveis são 'text', 'video', 'audio', 'image', 'other'",
+                "filename": "Valor textual que indica que o usuário realizou um download no marcador atual de navegação, indicado pelo nome do arquivo + extensão"
+            }
+        },
+        {
+            "Variable": "EXTERNAL_LINK",
+            "Description": "Indica informações acerca do acesso a recursos externos",
+            "Format": {
+                "current": "Valor textual que indica o marcador de navegação do usuário no momento do download",
+                "url": "Valor textual do link externo, indicado pelo seu endereço completo"
+            }
+        },
+        {
+            "Variable": "OPEN_ANSWER_atividade_subatividade",
+            "Description": "Representa a resposta a questões abertas (textuais), atividade indica o id da atividade, exemplo O3V1AR2, subatividade indica a questão, exemplo 0, compondo a variável OPEN_ANSWER_O3V1AR2_0",
+            "Format": "Texto de resposta"
+        },
+        {
+            "Variable": "CLOSED_ANSWER_atividade",
+            "Description": "Representa a resposta a questões fechadas, atividade indica o id da atividade, exemplo O1V1AV1, compondo a variável CLOSED_ANSWER_O1V1AV1",
+            "Format": {
+                "item": "Valor textual indicando o item de questão selecionadopelo usuário",
+                "correct": "Valor booleano indicanod que a seleção dousuário é a resposta correta ou não"
+            }
+        }
+    ]
+}

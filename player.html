@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="no" name="msapplication-tap-highlight">
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="Pragma">
+<meta content="0" http-equiv="Expires">
+<title></title>
+<link rel="stylesheet" href="player.css" media="screen" type="text/css">
+<script src="player_localstore.js"></script>
+<link href="favicon.ico" type="image/x-icon" rel="icon">
+<script>
+    var selecao = "";
+    
+    function selecao_recurso () {
+        selecao = "NEAD_FIOCRUZ_Pacote_03"
+        iwp.src = selecao+"/index.php";			
+    }
+</script>
+</head>
+<body oncontextmenu="return false" onload="selecao_recurso(this);">
+
+    <div style="overflow:auto;-webkit-overflow-scrolling:touch" id="content">	
+        <iframe id="UNASUSPPUPlayer" allowfullscreen></iframe>
+    </div>
+    <script>        
+        var iwp = document.getElementById("UNASUSPPUPlayer");
+        
+		iwp.onerror = function(event) { 
+            document.getElementById("UNASUSPPUPlayer").contentWindow = "Erro ao carregar arquivo do recursos educacional...";
+        };
+        
+        iwp.onload = function(event) {
+									
+			var iwp = document.getElementById("UNASUSPPUPlayer");
+			var iwc = iwp.contentWindow;
+			var newheight = iwc.document.body.scrollHeight;
+			iwp.height = (newheight) + "px";
+                        
+            iwc.oncontextmenu = function() {
+                return false;
+            };                           
+			            
+        };
+
+        window.onunload = function () {
+        };
+				
+</script>
+</body>

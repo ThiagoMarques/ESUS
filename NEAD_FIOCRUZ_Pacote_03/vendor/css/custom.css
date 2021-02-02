@@ -1,0 +1,984 @@
+/*
+ * CSS ESUS-AF @2021
+ * @author Thiago Santana Marques
+ */
+ /* ================================================================================= */
+
+/**********************
+* 1. Estrutura Principal
+** 2. Menu de Navegação
+*** 3. Header
+**** 4. Exercícios
+***** 5. Vídeo
+****** 6. Index
+******* 7. Manuais
+******** 8. Créditos
+********* 9. Feedback
+********** 10. Responsividade
+**********************\
+*/
+
+/* ==================================== 1. Estrutura Principal  ====================================*/
+
+body{
+    background-image: url(../../img/ESUS_BG.png);
+    transition: background-color .5s;
+    background-position: bottom;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify !important;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body .body-esus{
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255,255,255,.5);
+}
+
+.body-esus{
+  min-height: 100vh;
+}
+
+progress {
+  width: 95%;
+  height: 5px;
+}
+p{
+  font-size: 18px !important;
+  text-align: justify !important;
+}
+h2{
+  font-size: 2rem !important;
+  color: #3d648a;
+}
+h1{
+  color: #3d648a;
+  font-size: 2rem;
+}
+
+h5{
+  color: #3d648a;
+}
+
+h6{
+  color: #3d648a;
+}
+
+p {
+  color: black;
+}
+
+a{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #264059;
+}
+
+a:hover{
+  color: #264059;
+}
+a:clicked{
+ color: #264059; 
+}
+
+ul{
+  list-style: none;
+  padding-left: 20px;
+}
+
+video{
+	width: 100%;
+  margin-bottom: -5px;
+  height: auto;
+}
+
+.table td{
+  color:  #3d648a;
+}
+
+.table{
+  width: 100%;
+}
+
+.pagination{
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  font-size: 12px;
+  z-index: 9;
+}
+
+.pagination_bar{
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+.pagination_itens{
+  list-style: none;
+  margin: 0px;
+  display: inline-flex;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0px;
+}
+.pagination_itens>li{
+  padding: 10px 20px 10px 20px;
+  color: #003365;
+  cursor: pointer;
+}
+
+.stepBack, .stepBack2{
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px;
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  background-color: #2e83bc;
+  color: #fff;
+  font-weight: 900;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.stepBack i, .stepBack2 i, .stepFoward i, .stepFoward2 i{
+  position: relative;
+  top: 6px;
+}
+
+.stepFoward, .stepFoward2{
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  background-color: #2e83bc;
+  color: #fff;
+  font-weight: 900;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.body-esus h5{
+  font-weight: bold;
+}
+
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+ 
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #84BFEF;
+  outline: 0px solid slategrey;
+}
+
+/* ==================================== 2. Menu de Navegação  ====================================*/
+
+.sidenav {
+  height: 100%; 
+  width: 300px; 
+  position: fixed; 
+  z-index: 2; 
+  top: 0; 
+  left: -380px;
+  background-color: #f1f1f1;
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+}
+
+.sidenav ul{
+  margin: 0px;
+  padding: 0px;
+}
+.sidenav i{
+  font-size: 13px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.sidenav li {
+  cursor: pointer;
+  font-size: 13px;
+  list-style: none;
+  min-height: 50px;
+  color: #686868;
+  transition: 0.3s;
+  border-bottom: 1px solid rgb(255,255,255,.5);
+  padding: 10px;
+}
+
+.sidenav-titulo{
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 30px;
+  color: white;
+  background: #2e83bc;
+  transition: 0.3s;
+  padding: 10px 0 10px 25px;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidenav li:hover {
+  background-color: #5fa7d8;
+  color: white !important;
+  background-repeat: no-repeat;
+}
+
+.sidenav a {
+  color: #686868;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  background-color: #5fa7d8;
+  color: white !important;
+  background-repeat: no-repeat;
+}
+
+.active{
+  background-color: #5fa7d8;
+  color: white !important;
+  background-repeat: no-repeat;
+}
+
+.active i{
+  color: white;
+}
+
+.choosed{
+  background-color: lightgray;
+}
+
+.collapse li{
+  transition: .5s;
+  padding-left: 25px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 8px;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+  z-index: 2;
+  color: #2e83bc;
+}
+
+.side_menu_btn{
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  padding: 10px;
+  margin-bottom: 30px;
+  transition: 0.4s;
+  width: 70px;
+}
+
+.side_module{
+  padding: 10px;
+  font-size: 11px;
+  float: right;
+  color: #686868;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.side_menu_btn{
+  color: #2b4568;
+}
+
+.sidenav::-webkit-scrollbar {
+  width: .2em;
+}
+
+.sidenav::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+  background-color: #84BFEF;
+  outline: 1px solid #84BFEF;
+}
+
+.progress-user a{
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.pr-curso {
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.pr-curso:hover {
+  background-color: #2e83bc !important;
+  color: white !important;
+
+}
+
+#status_percentage:hover {
+  background-color: #2e83bc !important;
+  color: white !important;
+  cursor: default;
+}
+
+.fa-check{
+  color: green;
+}
+
+.funcionalidade a li span {
+  font-weight: normal;
+}
+
+#module_text {
+  color: #2e83bc;
+}
+
+
+/* ==================================== 3. Header  ====================================*/
+
+.header-banner{
+  height: 90px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-image: url('../../img/ESUS_banner.png');
+  background-size: cover;
+}
+
+.header-menu{
+  border-bottom: 1px solid #ddd;
+  height: 25px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #2e83bc;
+  border-bottom: 5px solid #2e83bc;
+}
+
+.header-menu span{
+  color: white;
+  display: inline;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.header-menu span:hover{
+  background-color: #2b4568;
+}
+
+.progress-user{
+  text-align: end;
+  display: inline;
+}
+
+.menu-user{
+  display: inline;
+}
+
+.menu-user a{
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.menu-user a:hover{
+  background-color: #264059;
+  color: white;
+}
+
+.banner_logo{ 
+  width: 450px;
+}
+.banner_title{
+  width: 400px;
+}
+
+/* ==================================== 4. Exercícios  ====================================*/
+
+.modal-dialog{
+  width: 80%;
+  max-width: 80% !important;
+}
+
+.modal-content{
+  width: 80%;
+  max-width: 80% !important;
+  margin: auto;
+}
+
+#enunciate {
+  padding-left: 0.8rem;
+  width: 100%;
+  font-size: 18px;
+}
+
+#question {
+  padding: 1rem;
+  width: 100%;
+  font-size: 18px;
+}
+
+.div-pontuacao {
+  margin-top: 2rem;
+}
+
+#progressBar {
+  width: 9rem;
+  height: 0.8rem;
+  border: 0.2rem solid rgb(61, 100, 138);
+  margin-bottom: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: rgb(61, 100, 138);
+  width: 0%;
+}
+
+.tituloExercicio h1{
+  font-size: 20px !important;
+}
+
+.choice-container p{
+  margin-bottom: 0px !important;
+}
+
+.choiced-container p{
+  margin-bottom: 0px !important;
+}
+
+.choiced-container {
+  display: flex;
+  margin-bottom: 0rem;
+  width: 100%;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 16px;
+  min-width: 20rem;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0rem;
+  width: 100%;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 16px;
+  min-width: 20rem;
+}
+
+.choiced-container:hover{
+  cursor: auto;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  background: #d8ecf3;
+  transform: transform 900ms;
+}
+
+.choice-prefix {
+  padding: 0.6rem 1.5rem;
+  color: black;
+}
+
+.choice-text {
+  padding: 0.6rem;
+  width: 100%;
+}
+
+.correct {
+  background: lightgreen;;
+}
+
+.incorrect {
+  background: pink;
+}
+
+.pontuacao{
+  display: inline;
+  font-size: 16px;
+  color: #3d648a;
+}
+
+#score {
+  font-size: 16px;
+  color: #3d648a;
+}
+
+.informativo-bold{
+  font-weight: bold;
+  color: #3d648a;
+  margin-top: 20px;
+}
+.bold{
+  font-weight: bold;
+}
+
+.informativo p{
+  font-size: 16px;
+}
+
+.informativo li{
+  font-size: 16px;
+  list-style: decimal;
+  padding-bottom: 5px;
+}
+
+.btnStart{
+  background: #3d648a;
+  color: #FFF;
+  border-radius: 5px;
+}
+
+.btnStart:hover{
+  background: #3d648a;
+  color: #FFF;
+}
+
+.tituloExercicio{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #3d648a;
+}
+
+.tituloQuestao{
+  color: #3d648a;
+  font-size: 18px;
+}
+
+.divTitulo{
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+.me_feedback{
+  display: none;
+}
+
+.questao p{
+  font-size: 16px !important;
+}
+
+.form-group{
+  margin: 5px;
+  padding: 5px;
+}
+
+.form-group label{
+  font-size: 16px !important;
+}
+
+.form-group label:hover{
+  background-color: lightblue;
+}
+
+.form-group label:checked{
+  background-color: green;
+}
+
+form {
+  counter-reset: opcoes;
+}
+
+.informativo li{
+  font-size: 16px !important;
+}
+
+.modal-body{
+  font-size: 16px !important;
+}
+
+.modal-title{
+  font-weight: bold;
+}
+
+.correta{
+  background-color: lightgreen;
+}
+
+.incorreta{
+  background-color: pink;
+}
+
+.container-fluid {
+  margin: 30px
+}
+
+input[type="radio"]+label::before,
+input[type="checkbox"]+label::before {
+  counter-increment: opcoes;
+  content: "("counter(opcoes, lower-alpha) ") ";
+  font-weight: bold;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="button"] {
+  margin: 1em auto;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #3d648a;
+  border: solid 0 transparent;
+  outline: none;
+  box-shadow: 0 .1em rgba(0, 0, 0, .5);
+  padding: .5em;
+  display: block;
+  width: 50%;
+  cursor: pointer;
+}
+
+.clicked {
+  border:2px solid black;
+}
+
+.divTitulo{
+  display: none;
+}
+
+#feedbackTexto {
+  margin-top: 20px;
+}
+
+#feedbackResultado {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.nota {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nota-geral{
+  font-style: italic;
+  font-size: 14px;
+}
+
+.tentativas-user {
+  font-weight: bold;
+}
+
+/* ==================================== 5. Vídeo  ====================================*/
+
+.video{
+  height: auto;
+  border:1px solid #ccc;
+  border-radius: 0px 0px 25px 25px;
+  /*padding-top: 35px;*/
+  padding-bottom: 35px;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+  width: 60%;
+}
+
+.video a{
+  color: white;
+  font-weight: normal;
+}
+.video a:hover{
+  color: white;
+  font-weight: normal;
+}
+
+.video_title{
+  position: relative;
+  text-align: left;
+  float: left;
+  padding-left: 10px;
+  top: -10px;
+  margin-top: -10px;
+}
+
+.video_footer{
+  float: right;
+  padding: 5px 20px;
+}
+.texto_footer{
+  float: left;
+  padding: 5px 20px;
+}
+
+.texto-informativo{
+  border-radius: 14px;
+  padding-top: 14px;
+  position: relative;
+  -webkit-box-shadow: 0px 6px 6px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 6px 6px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+  font-size: initial;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.titulo_informacao {
+  color: #3d648a;
+}
+
+.frase_video_lista{
+  list-style: none; 
+}
+
+.frase_video_lista{
+  padding-left: 5px;
+}
+
+.frase_video_lista i{
+  color: #3d648a;
+  padding-right: 5px;
+}
+
+.video{
+  height: auto;
+  border-radius: 14px;
+  padding-top: 35px;
+  padding-bottom: 55px;
+  position: relative;
+  margin: auto;
+  width: 85%;
+  -webkit-box-shadow: 0px 6px 6px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 6px 6px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+  color: #3472b4;
+  font-size: initial;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.video_title{
+  position: relative;
+  text-align: left;
+  float: left;
+  padding-left: 10px;
+  top: -10px;
+  margin-top: -10px;
+}
+
+#btn_close {
+  color: #264059;
+}
+
+.video a{
+  color: white;
+}
+
+.video_footer{
+  float: right;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.video_footer i{
+  color: white;
+}
+
+.frase_video{
+  font-size: 16px !important;
+}
+
+/* ==================================== 6. Index  ====================================*/
+
+.funcionalidade-index{
+  list-style: none;
+  padding-left: 20px;
+}
+.funcionalidade-index i{
+  color: #3d648a;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.btn_funcionalidades{
+  background-color: transparent;
+  color: #3d648a;
+  border-style: none;
+  box-shadow: transparent;
+}
+.btn_funcionalidades{
+  background-color: transparent;
+  color: #3d648a;
+  border-style: none;
+  box-shadow: transparent;
+}
+.btn_funcionalidades:hover{
+  background-color: rgb(195, 195, 195);
+  border-style: none !important;
+}
+.btn_funcionalidades:focus{
+  background-color: rgb(195, 195, 195);
+  border-style: none;
+}
+.btn_funcionalidades:active{
+  background-color: rgb(195, 195, 195);
+  border-style: none;
+}
+.btn_funcionalidades a{
+  color: #3d648a;
+  font-weight: 500;
+}
+.btn_funcionalidades a:hover{
+  color: #3d648a;
+  text-decoration: none;
+}
+
+/* ==================================== 7. Manuais  ====================================*/
+
+.table-manual i {
+  padding-right: 5px;
+}
+.table-manual {
+  color: #3d648a;
+}
+.tituloPagina{
+  color: #3d648a;
+  padding-top: 20px;
+}
+
+.tituloItem a{
+  color: #3d648a;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.container-video {
+  height: 100vh;
+}
+
+/* ==================================== 8. Créditos  ====================================*/
+
+.tituloCreditoBlack {
+  font-weight: bold;
+  color: black;
+}
+
+.tituloCredito{
+  font-weight: bold;
+  color: #3d648a;;
+}
+
+.tituloCredito p{
+  color: #3d648a;
+  font-size: 1rem !important;
+}
+
+/* ==================================== 9. Feedback  ====================================*/
+
+.table-titulo-feedback{
+  background-color: #2e83bc;
+  font-weight: normal;
+  color: #FFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 0.85;
+}
+
+.div-table{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: gray;
+  padding: 0px;
+}
+.table-feedback td{
+  vertical-align: middle;
+}
+.table-feedback a{
+  color:  #3d648a;
+  font-weight: normal;
+}
+.table-titulo{
+  background-color: #2e83bc;
+  font-weight: normal;
+  color: #FFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 0.85;
+}
+
+.table-feedback .fa-check{
+  color: green;
+}
+.table-feedback .fa-times{
+  color: red;
+}
+
+/* ==================================== 10. Responsivo  ====================================*/
+
+@media screen and (max-width: 870px) {
+  .side_menu_btn{font-size: 20px;width: 50px;}
+  .header-bar{height: 60px;font-size: inherit; padding: 0px;margin-bottom: 3px solid red}
+  .banner_logo{width: 150px;}
+  .banner_title{width: 300px;}
+  .header-banner{height:60px;}
+  h1{font-size: 24px !important;}
+  h2{font-size: 20px !important;}
+  h3{font-size: 18px !important;}
+  h4{font-size: 16px !important;}
+  p{font-size: 14px !important;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 60px;}
+  .sidenav a {font-size: 14px;}
+}
+
+@media screen and (max-width: 450px) {
+  h1{font-size: 1.8em !important;}
+  h2{font-size: 1.5em !important;}
+  h4{font-size: 1.3em !important;}
+  p{font-size: 1em !important;}
+  .banner_logo{width: 140px;}
+  .banner_title{width: 0px;}
+  .header-banner{height:60px; text-align: center;}
+}
+
+@media screen and (max-width: 990px) {
+  .video{
+    width: 100%;
+  }
+	video{
+		width: 100%;	
+	}
+}
+

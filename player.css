@@ -1,0 +1,521 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: none repeat scroll 0 0 #FDFDFD;	
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+	
+html {
+    font-family: sans-serif;
+}
+html {
+    font-size: 10px;
+}
+html {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+@-ms-viewport {
+  width:auto!important;
+}
+
+a {
+    outline: 0;
+}
+
+a:hover, a:active, a:focus {
+     outline: none;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+}
+
+.navbar2-header2 {
+    float: left;
+    height: 50px;
+    margin-top: 7px;
+    width: 150px;
+}
+
+.navbar2-brand2 img {
+    width: 120px;
+    height: 30px;
+}
+
+.navbar2 {
+    background: url("background.png") repeat scroll 0 0 rgba(0, 0, 0, 0);  
+	min-width: 320px;	
+	height: 50px;
+}
+
+.navbar2-default .navbar2-nav > li > a {
+    color: white;
+}
+
+.navbar2-default .navbar2-nav > li > a:hover, .navbar2-default .navbar2-nav > li > a:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.navbar2-default .navbar2-nav > .open > a, .navbar2-default .navbar2-nav > .open > a:hover, .navbar2-default .navbar2-nav > .open > a:focus {
+    background-color: #034A89;
+    color: white;
+}
+
+.navbar2-nav > li > .dropdown-menu {
+    padding: 5px;
+}
+
+.navbar2-brand2 {
+    float: left;
+    font-size: 18px;
+    height: 50px;
+    line-height: 20px;
+    margin-left: -15px!important;
+    padding: 10px!important;  
+}
+
+.navbar2-toggle2 {
+    margin-bottom: 2px!important;
+}
+
+.navbar2-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+.navbar2-default .navbar2-brand {
+  color: #777;
+}
+.navbar2-default .navbar2-brand:hover,
+.navbar2-default .navbar2-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar2-default .navbar2-text {
+  color: #777;
+}
+.navbar2-default .navbar2-nav > li > a {
+  color: #777;
+}
+.navbar2-default .navbar2-nav > li > a:hover,
+.navbar2-default .navbar2-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.navbar2-default .navbar2-nav > .active > a,
+.navbar2-default .navbar2-nav > .active > a:hover,
+.navbar2-default .navbar2-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar2-default .navbar2-nav > .disabled > a,
+.navbar2-default .navbar2-nav > .disabled > a:hover,
+.navbar2-default .navbar2-nav > .disabled > a:focus {
+  color: white;
+  background-color: transparent;
+}
+.navbar2-default .navbar2-toggle {
+  border-color: white;  
+  border-width: 0px;
+}
+
+.navbar2-default .navbar2-toggle[aria-expanded="true"] {
+  border-width: 1px;  
+}
+
+.navbar2-default .navbar2-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar2-default .navbar2-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar2-default .navbar2-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar2-default .navbar2-collapse,
+.navbar2-default .navbar2-form {
+  border-color: #e7e7e7;
+}
+.navbar2-default .navbar2-nav > .open > a,
+.navbar2-default .navbar2-nav > .open > a:hover,
+.navbar2-default .navbar2-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar2-default .navbar2-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar2-default .navbar2-nav .open .dropdown-menu > li > a:hover,
+  .navbar2-default .navbar2-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar2-default .navbar2-nav .open .dropdown-menu > .active > a,
+  .navbar2-default .navbar2-nav .open .dropdown-menu > .active > a:hover,
+  .navbar2-default .navbar2-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar2-default .navbar2-nav .open .dropdown-menu > .disabled > a,
+  .navbar2-default .navbar2-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar2-default .navbar2-nav .open .dropdown-menu > .disabled > a:focus {
+    color: white;
+    background-color: transparent;
+  }
+}
+.navbar2-default .navbar2-link {
+  color: #777;
+}
+.navbar2-default .navbar2-link:hover {
+  color: #333;
+}
+.navbar2-default .btn-link {
+  color: #777;
+}
+.navbar2-default .btn-link:hover,
+.navbar2-default .btn-link:focus {
+  color: #333;
+}
+.navbar2-default .btn-link[disabled]:hover,
+fieldset[disabled] .navbar2-default .btn-link:hover,
+.navbar2-default .btn-link[disabled]:focus,
+fieldset[disabled] .navbar2-default .btn-link:focus {
+  color: white;
+}
+
+.navbar2-default .navbar2-text a{
+    color: white;
+}
+
+.navbar2-text {
+	margin: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+	float: right;
+}
+
+.navbar2-text2 a {
+    color: white;
+    font-size: 16px;	
+}
+
+.form-control {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 1;
+    padding: 0 10px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    position: relative;
+    right: -20px;
+	top: 10px;
+}
+
+#barra-brasil div, #barra-brasil a, #barra-brasil ul, #barra-brasil li {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+#barra-brasil ul {
+    list-style: none outside none;
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold");
+}
+#barra-brasil {
+    background: none repeat scroll 0 0 #F1F1F1;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+}
+#barra-brasil a {
+    text-decoration: none;
+}
+div#wrapper-barra-brasil {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#barra-brasil .brasil-flag {
+    border-right: 2px solid #DFDFDF;
+    float: left;
+    padding: 7px 0 6px;
+    width: 115px;
+}
+
+#barra-brasil .brasil-flag-m {
+    float: left;
+    padding: 7px 0 6px;
+    width: 45px;
+}
+
+#barra-brasil .brasil-flag .link-barra {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAATCAIAAAABJ4pRAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABINJREFUeNqUVFtsFFUYPrfdmdnLbLe021baQqWUtdJKL5QiASPiNVqC0TYqUWLShJQmRH3RqPHFRKJvQqIPQNSAAcMDptGEiKjYpLZIkSqGXqjdFlppd3vb7c7Ozpxz/M+2wZD44snszOzJnP//vv///g9XnNiXtNISI1gYq4eUEu4CC7SyiLpJgtSOIJKg/1ySB3x+NmsvJLNpgVUwlAu08iIkzi2pUhHIAa/q1L9p7l6YWmmHEOSBWJD6LixwJ7DDAKR06c6imQOVYxoRyEV4BR3JBYfvqNqBtILrSGNEKgoCsVxWDMmxgAOADeDjQsP+oHbo1egk7B+Mju/vq7kwVYhohsAxoiogiIM5hBaSUIBFfS21WRcOSwUHOwgTqoJR+O0pv31u56XmUKrvt4o/RyNrjVRHw40iLdU9Hck4DPBQxOQKK/XQqQa7nGNb8UICSUoE4y4rCyweqh164b7Jk12N737x2NjtfMAeCDit268e7jj7yOqfX++p+ebvQk5coAB8BQIMroqaf7xt3p4TUATgxj0Y0wOVN96uHomE3I+Ob37zSJvUHURshjySIZ4JPLhp+IcPj3h1eSZ2zxu/R8cXDeThuSLJkGZSY/fGjGOrenG9xlz8vPnK/g0xEwprl52PH9ryUGRLk1lfXWqGCcE0lUqOjxeHVy01141V+5Mvlk+lOLmcAOwC6OpMo8FnqlOCh2j2taqRE1sHKk2LuFJq6NveumNd9f0Dt2IjC1aGVKwzdz1cUryaxSasW9Oo/dFfoaEB6jxdOl2Xt3BtwYw7Xh/VmQNNcNHj5fH3N40CQgnNAAUQMjgh+y/dpIblN9j14fHuHqEFvPUP5L3Svp4mHNtGmgbaVF1oWZNIi8GXextALUpEhLqnJ0o3f9fcEw9iD3RFCaUiMmvmG/lhI50VBQX6ujX5ju3+dHHm1Mmb9dGsxyRKSwylHNLRt2HvL42O4C5IhsLsgEII74+Hd1zY+s5AdMklguMnmkaLwn9RGgr7dSfLk5ZreGhJUdD0+oz0ZxSOMNQ1VdB4fscnw5VCiOUBpb7d91vcklBJJpDwXpwOn50qKdXs2tLZpoqJU99XxVPBbMayXRnOK/Dp5p5tZzpbu0cT+sErG9/6o2rW9iLKQbOget2jQbgay3UIJrlhlJSK6Yz3dKx4dD74Ut3Ivu2X5xe8CSvopdm1kdh7e7/sfO7Ho4PlrT0NvTMhTISaaRhUoImITr244Njz8WwSVKOMhBI1hdIBMQuXlARShxuvPbt+3k0gx9GMsDVp0c7emq8nSiSFjzkVlCuKfHl+Q0aQai21Gb4E7SA59wDWGLLBg+Kk6/lqrKw/4dtWOLfKn/74+r2t3fVX5/IwcyExIBAKFFWOhskyWVx4tG3GmUfKCFRbOHYBNjiC6hBkBTrQRl+mSLeHZkOYOXeMRxIFCb6SME5gYJiGvH7MPn0q5wBCgqkgF4xBEVfdhksTyMmNpFT/chJQJQbkgitE8o73gRe4HsRYe/RJy86IFYtU1pVzSqxC/J8F5fMz/z8CDAAkCSSg0qSX5AAAAABJRU5ErkJggg==") no-repeat scroll 8px center rgba(0, 0, 0, 0);
+    display: block;
+    line-height: 19px;
+    padding-left: 42px;
+    text-transform: uppercase;
+    width: 43px;
+}
+
+#barra-brasil .brasil-flag-m .link-barra {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAATCAIAAAABJ4pRAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABINJREFUeNqUVFtsFFUYPrfdmdnLbLe021baQqWUtdJKL5QiASPiNVqC0TYqUWLShJQmRH3RqPHFRKJvQqIPQNSAAcMDptGEiKjYpLZIkSqGXqjdFlppd3vb7c7Ozpxz/M+2wZD44snszOzJnP//vv///g9XnNiXtNISI1gYq4eUEu4CC7SyiLpJgtSOIJKg/1ySB3x+NmsvJLNpgVUwlAu08iIkzi2pUhHIAa/q1L9p7l6YWmmHEOSBWJD6LixwJ7DDAKR06c6imQOVYxoRyEV4BR3JBYfvqNqBtILrSGNEKgoCsVxWDMmxgAOADeDjQsP+oHbo1egk7B+Mju/vq7kwVYhohsAxoiogiIM5hBaSUIBFfS21WRcOSwUHOwgTqoJR+O0pv31u56XmUKrvt4o/RyNrjVRHw40iLdU9Hck4DPBQxOQKK/XQqQa7nGNb8UICSUoE4y4rCyweqh164b7Jk12N737x2NjtfMAeCDit268e7jj7yOqfX++p+ebvQk5coAB8BQIMroqaf7xt3p4TUATgxj0Y0wOVN96uHomE3I+Ob37zSJvUHURshjySIZ4JPLhp+IcPj3h1eSZ2zxu/R8cXDeThuSLJkGZSY/fGjGOrenG9xlz8vPnK/g0xEwprl52PH9ryUGRLk1lfXWqGCcE0lUqOjxeHVy01141V+5Mvlk+lOLmcAOwC6OpMo8FnqlOCh2j2taqRE1sHKk2LuFJq6NveumNd9f0Dt2IjC1aGVKwzdz1cUryaxSasW9Oo/dFfoaEB6jxdOl2Xt3BtwYw7Xh/VmQNNcNHj5fH3N40CQgnNAAUQMjgh+y/dpIblN9j14fHuHqEFvPUP5L3Svp4mHNtGmgbaVF1oWZNIi8GXextALUpEhLqnJ0o3f9fcEw9iD3RFCaUiMmvmG/lhI50VBQX6ujX5ju3+dHHm1Mmb9dGsxyRKSwylHNLRt2HvL42O4C5IhsLsgEII74+Hd1zY+s5AdMklguMnmkaLwn9RGgr7dSfLk5ZreGhJUdD0+oz0ZxSOMNQ1VdB4fscnw5VCiOUBpb7d91vcklBJJpDwXpwOn50qKdXs2tLZpoqJU99XxVPBbMayXRnOK/Dp5p5tZzpbu0cT+sErG9/6o2rW9iLKQbOget2jQbgay3UIJrlhlJSK6Yz3dKx4dD74Ut3Ivu2X5xe8CSvopdm1kdh7e7/sfO7Ho4PlrT0NvTMhTISaaRhUoImITr244Njz8WwSVKOMhBI1hdIBMQuXlARShxuvPbt+3k0gx9GMsDVp0c7emq8nSiSFjzkVlCuKfHl+Q0aQai21Gb4E7SA59wDWGLLBg+Kk6/lqrKw/4dtWOLfKn/74+r2t3fVX5/IwcyExIBAKFFWOhskyWVx4tG3GmUfKCFRbOHYBNjiC6hBkBTrQRl+mSLeHZkOYOXeMRxIFCb6SME5gYJiGvH7MPn0q5wBCgqkgF4xBEVfdhksTyMmNpFT/chJQJQbkgitE8o73gRe4HsRYe/RJy86IFYtU1pVzSqxC/J8F5fMz/z8CDAAkCSSg0qSX5AAAAABJRU5ErkJggg==") no-repeat scroll 8px center rgba(0, 0, 0, 0);
+    display: block;
+    line-height: 19px;
+    padding-left: 42px;
+    text-transform: uppercase;
+    width: 43px;
+}
+
+#barra-brasil .acesso-info {
+    left: 10px;
+    position: relative;
+}
+#barra-brasil .list {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#barra-brasil .list .first {
+    border-left: 2px solid #DFDFDF;
+}
+#barra-brasil .list-item {
+    border-right: 2px solid #DFDFDF;
+    display: inline-block;
+    height: 32px;
+    padding: 0 15px 0 13px;
+}
+#barra-brasil .link-barra {
+    color: #606060;
+}
+@media screen and (max-width: 668px) {
+#barra-brasil .list {
+    top: -100px;
+}
+}
+
+#close-suporte {
+    background-color: white;
+}
+
+#UNASUSPPUPlayer {
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;    
+/*    z-index: 1; */
+    overflow:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+#UNASUSPPUPlayerLM {
+    width: 100%;
+    height: 100%;
+/*    z-index: 1000; */
+    background: #ccc;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#content {
+    border: medium none;
+    display: block;
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar2-text2 {
+    color: white;
+    float: right;
+    font-size: 16px;
+    margin: 0;
+    padding: 14px 0 0 0;
+}  
+.navbar2-header3 {
+    height: 50px;
+	float: right;
+}
+
+/*!
+ * # Semantic UI 2.0.0 - Container
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Container
+*******************************/
+
+
+/* All Sizes */
+.ui.container {
+  display: block;
+  max-width: 100% !important;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .ui.container {
+    width: auto;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+  }
+  .ui.grid.container {
+    width: auto !important;
+  }
+  .navbar2 {
+    height: 100px;
+  }  
+  #content {
+    top: 100px;
+    height: -webkit-calc(100% - 100px);  /* para Chrome */
+    height: -moz-calc(100% - 100px);     /* para Firefox */
+    height: calc(100% - 100px);          /* para suporte nativo */
+  }
+	.form-control {
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+		color: #555;
+		display: block;
+		font-size: 14px;
+		height: 30px;
+		line-height: 1;
+		margin-top: -4px;
+		padding: 0 10px;
+		transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+		width: 100%;
+		position: relative;
+		right: 0px;
+		top: 0px;
+	}  
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ui.container {
+    width: 723px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .ui.grid.container {
+    width: calc( 723px  +  2em ) !important;
+  }
+}
+
+/* Small Monitor */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ui.container {
+    width: 933px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .ui.grid.container {
+    width: calc( 933px  +  2em ) !important;
+  }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) {
+  .ui.container {
+    width: 1127px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .ui.grid.container {
+    width: calc( 1127px  +  2em ) !important;
+  }
+}
+
+
+/*******************************
+             Types
+*******************************/
+
+
+/* Text Container */
+.ui.text.container {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  max-width: 700px !important;
+  line-height: 1.5;
+}
+.ui.text.container {
+  font-size: 1.14285714rem;
+}
+
+/*******************************
+           Variations
+*******************************/
+
+.ui[class*="left aligned"].container {
+  text-align: left;
+}
+.ui[class*="center aligned"].container {
+  text-align: center;
+}
+.ui[class*="right aligned"].container {
+  text-align: right;
+}
+.ui.justified.container {
+  text-align: justify;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+
+
+/*******************************
+         Site Overrides
+*******************************/
